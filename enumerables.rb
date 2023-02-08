@@ -12,7 +12,12 @@ end
 # given an array of spicy foods, **return an array of strings**
 # with the names of each spicy food
 def get_names(spicy_foods)
-  # your code here
+  food_string = []
+ food_names = spicy_foods.each do |f|
+   food_string.append(f[:name])
+ end
+   food_names
+   food_string
 end
 
 # given an array of spicy foods, **return an array of hashes** 
