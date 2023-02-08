@@ -66,5 +66,7 @@ def print_spiciest_foods(spicy_foods)
 end
 # the average heat level of all the spicy foods in the array
 def average_heat_level(spicy_foods)
-  # your code here
+  sum_heat = 0
+  spicy_foods.map {|f| sum_heat += f[:heat_level]}
+  sum_heat / 3
 end
