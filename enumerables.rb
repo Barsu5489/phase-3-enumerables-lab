@@ -35,7 +35,9 @@ def spiciest_foods(spicy_foods)
 # HINT: you can use * with a string to produce the correct number of 🌶 emoji. 
 # "hello" * 3 == "hellohellohello"
 def print_spicy_foods(spicy_foods)
-  # your code here
+  red_pepper = '🌶'
+  food_spicy = spicy_foods.map {|f| puts "#{f[:name]} (#{f[:cuisine]}) | Heat Level: #{red_pepper * f[:heat_level]}"}
+  return food_spicy
 end
 
 # given an array of spicy foods and a string representing a cuisine, **return a single hash**  
